@@ -48,8 +48,10 @@ if __name__ == "__main__":
 
     # The output of the left component becomes the input of the right component
     # Data flows from left to right through the pipeline
+    # the result of the chain is a runnable object, that we can invoke
     chain = summary_prompt_template | llm | StrOutputParser()
 
+    # thie information are invoked at runtime!
     res = chain.invoke(input={"information":information})
 
     print(res)

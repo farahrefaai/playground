@@ -5,7 +5,7 @@ from langchain_ollama import ChatOllama
 from langchain_core.output_parsers import StrOutputParser
 from third_parties.linkedin import scrape_linkedin_profile
 
-# NOTE let the llm work on scraped data you provide
+# NOTE let the llm work on scraped data you provide on runtime.
 
 
 if __name__ == "__main__":
