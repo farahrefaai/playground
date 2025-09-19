@@ -1,4 +1,4 @@
-In this repo, am building and invoking the agent without using the AgentExecutor. Instead, am building its steps.
+In this repo, am building and invoking the agent without using the AgentExecutor (The Legacy way, now its better to use LangGraph). Instead, am building its steps.
 
 Main components of a LangChain ReAct agent: LLM, Tools, Prompt Structure
 
