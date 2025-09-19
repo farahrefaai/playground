@@ -1,0 +1,9 @@
+this is using pipenv
+
+1- pipenv shell
+
+
+stop token was introduced.
+
+in this repo, we are building the agent executor.
+the agent executor build the loop of invoking the model.
