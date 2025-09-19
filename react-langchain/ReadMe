@@ -1,9 +1,25 @@
-this is using pipenv
+In this repo, am building and invoking the agent without using the AgentExecutor. Instead, am building its steps.
 
-1- pipenv shell
+Main components of a LangChain ReAct agent: LLM, Tools, Prompt Structure
+
+tools can be build by a decorator or an object wrapper
+
+Prompt Structure handle the Thought, Action, Action Input, Observation,..
+
+## Virtual environment
+
+pipenv shell, using the command platte set the python interpreter path
+
+## introduced concepts
+- stop tokens were introduced. However, the llama3 model kept iterating. should come to this later
+
+- Runnables -- the main object that is inherited by the elements of the invoked chain
+
+- scratchpad -- the history of the intermediate steps of the llm
+
+- AIMessage is the response of invoking the chain of Runnables WITHOUT IMPLEMENTING THE PARSERS
+
+- ReActSingleInputOutputParser, AgentAction, and AgentFinish
+    -  ReActSingleInputOutputParser get the AIMessage content and determines whether the agent should take an action (AgentAction) or finish the task (AgentFinish)
 
 
-stop token was introduced.
-
-in this repo, we are building the agent executor.
-the agent executor build the loop of invoking the model.
