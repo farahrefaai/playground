@@ -22,7 +22,7 @@ if __name__ == "__main__":
     text_splitter = CharacterTextSplitter(chunk_size = 1000, chunk_overlap =30, separator="\n" )
     docs = text_splitter.split_documents(documents=documents)
 
-    embeddings = OllamaEmbeddings(model ="llama3")
+    embeddings = OllamaEmbeddings(model="all-minilm")
     vectorestore = FAISS.from_documents(documents = docs,embedding=embeddings)
 
     vectorestore.save_local("faiss_index_react")
