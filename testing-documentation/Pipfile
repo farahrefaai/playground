@@ -1,0 +1,38 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+langchain-exa = "*"
+langchain-ollama = "*"
+pydantic = "*"
+firecrawl-py = "*"
+beautifulsoup4 = "*"
+black = "*"
+tiktoken = "*"
+openai = "*"
+unstructured = "*"
+nltk = "*"
+fastapi = "*"
+jinja2 = "*"
+uvicorn = "*"
+streamlit = "*"
+streamlit-chat = "*"
+tqdm = "*"
+isort = "*"
+langchainhub = "*"
+langchain-community = "*"
+langsmith = "*"
+pillow = "*"
+langchain-tavily = "*"
+langchain-pinecone = "*"
+certifi = "*"
+langchain-chroma = "*"
+python-dotenv = "*"
+ipykernel = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.13"
