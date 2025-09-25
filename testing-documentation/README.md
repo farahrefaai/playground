@@ -90,3 +90,11 @@ performes the retrieval process, it has two arguments
 
 ## create_stuff_documents_chain
 performes the augmentation, recieves the prompt and the context and send everything to the llm
+
+## Streamlit
+we used streamlit to create the FE and make it like a chat bot
+
+## Retieve with history
+likely we have a prompt that accepts the history.
+
+so here we created two retrieves, one for the context and the second for the history
