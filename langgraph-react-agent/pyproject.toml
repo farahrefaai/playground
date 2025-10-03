@@ -1,0 +1,25 @@
+[project]
+name = "langgraph-react-agent"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "farah"}
+]
+readme = "README.md"
+requires-python = ">=3.11,<4.0"
+dependencies = [
+    "langchain (>=0.3.27,<0.4.0)",
+    "langchain-ollama (>=0.3.8,<0.4.0)",
+    "langchain-tavily (>=0.2.11,<0.3.0)",
+    "langgraph (>=0.6.8,<0.7.0)",
+    "python-dotenv (>=1.1.1,<2.0.0)",
+    "black (>=25.9.0,<26.0.0)",
+    "isort (>=6.1.0,<7.0.0)",
+    "langchain-community (>=0.3.30,<0.4.0)",
+    "ddgs (>=9.6.0,<10.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
